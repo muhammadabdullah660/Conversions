@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Conversions</h1><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Hours into seconds</h3>
+                <input type="text" id="hours" placeholder="Enter time in hours"><br>
+                <input type="text" name="" class="output" id="outputInSec" placeholder="Your Result here" disabled><br>
+                <button class="button" onclick="timeInSeconds()">Calculate</button>
+
+            </div>
+            <div class="col-md-3" id="invArr">
+                <h3>Inverting Array</h3>
+                <input id="invert1" type="tel"><br>
+                <input id="invert2" type="tel"><br>
+                <input id="invert3" type="tel"><br>
+                <input id="invert4" type="tel"><br>
+                <input type="text" name="" class="output" id="Inverted" placeholder="Inverted Array" disabled><br>
+                <button class="button" onclick="invertArray()">Invert</button>
+            </div>
+            <div class="col-md-3">
+                <h3>Convert Age into Days</h3>
+                <input type="text" name="" id="age" placeholder="Your Age in Years"><br>
+                <input type="text" name="" class="output" id="daysAge" placeholder="Age in Days" disabled><br>
+                <button class="button" onclick="ageInDays()">Calculate</button>
+            </div>
+            <div class="col-md-3">
+                <h3>String Lenght Checking</h3>
+                <input type="text" name="" id="str1" placeholder="Enter String">
+                <input type="text" name="" id="str2" placeholder="Enter String">
+                <input type="text" name="" class="output" id="check" placeholder="Evaluation" disabled><br>
+                <button class="button" onclick="checkLength()">Calculate</button>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Int To String</h3>
+                <fieldset class="fieldProgram6">
+                    <div id="strToIntDiv">
+
+                        Enter an Array:
+                        <br>
+                        <input type="text" name="Arr" id="arrE1" placeholder="Element1">
+                        <input type="text" name="Arr" id="arrE2" placeholder="Element2" required
+                            class="inputText  array">
+                        <input type="text" name="Arr" id="arrE3" placeholder="Element3" required
+                            class="inputText  array">
+                        <input type="text" name="Arr" id="arrE4" placeholder="Element4" required
+                            class="inputText  array">
+                        <input type="text" name="Arr" id="arrE5" placeholder="Element5" required
+                            class="inputText  array">
+                        <input type="text" name="Arr" id="arrE6" placeholder="Element6" required
+                            class="inputText  array">
+                        <input type="text" name="Arr" id="arrE7" placeholder="Element7" required
+                            class="inputText  array">
+                        <input type="text" name="Arr" id="arrE8" placeholder="Element8" required
+                            class="inputText  array">
+                        <input type="text" name="" class="output" id="intToStr" placeholder="Required Array"
+                            disabled><br>
+                        <button class="button" onclick="convertArray()">Calculate</button>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-4">
+                <h3>Leap Year or Not ?</h3>
+
+                <fieldset>
+                    <div id="leapYearDiv">
+                        Enter a Year:
+                        <input type="tel" name="leapYear" id="leapYear" placeholder="Enter a Year" required
+                            class="inputText" maxlength="4"> <br>
+                        <input type="text" name="" class="output" id="leap" placeholder="Leap Year Or Not ?"
+                            disabled><br>
+                        <button class="button" onclick="leapYear()">Check</button>
+
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
